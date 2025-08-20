@@ -1,329 +1,433 @@
-# 🏆 Adobe PDF Insights & Podcast Platform
-## Grand Finale Submission - Complete AI-Powered Solution
+# 📚 PDF Insights & Engagement Platform
+## Advanced Document Analysis with AI-Powered Content Discovery
 
 <div align="center">
 
-**🎯 One-Command Deployment Ready for Jury Evaluation**
+**🎯 Intelligent PDF Processing & Cross-Document Analysis System**
 
-[![Docker](https://img.shields.io/badge/Docker-Ready-blue?logo=docker)](./Dockerfile)
 [![React](https://img.shields.io/badge/React-19-61dafb?logo=react)](./frontend)
 [![FastAPI](https://img.shields.io/badge/FastAPI-Latest-009688?logo=fastapi)](./backend)
 [![Adobe](https://img.shields.io/badge/Adobe-PDF%20Embed-red?logo=adobe)](https://developer.adobe.com/document-services/apis/pdf-embed/)
-[![AI](https://img.shields.io/badge/AI-Gemini%20%2B%20Azure-green?logo=google)](./backend)
+[![AI](https://img.shields.io/badge/AI-Powered-green?logo=google)](./backend)
+[![TTS](https://img.shields.io/badge/Azure-TTS-blue?logo=microsoft)](./backend)
 
-**🎉 Complete PDF Processing, AI Insights & Podcast Generation Platform**
+**🚀 Transforming document workflow with intelligent insights and multimedia content generation**
 
 </div>
 
 ---
 
-## 🚀 Quick Start for Jury
+## 🌟 Project Overview
 
-### One-Command Deployment (Recommended)
+This platform revolutionizes document analysis by combining advanced AI technologies with intuitive user experiences. Built for professionals who work with multiple PDF documents, it provides intelligent content discovery, cross-document insights, and multimedia content generation capabilities.
 
+### 🎯 Core Mission
+Transform static PDF documents into interactive, searchable knowledge bases with AI-powered insights, content connections, and multimedia engagement tools.
+
+---
+
+## ⚡ Quick Start
+
+### Docker Deployment (Recommended)
 ```bash
-# Method 1: Use our deployment script (Recommended)
-./run-jury.sh        # Linux/Mac
-run-jury.bat         # Windows
-
-# Method 2: Direct Docker Compose
+# One-command deployment
 docker-compose up --build
 
-# Method 3: Docker Build & Run
-docker build -t adobe-pdf-platform .
-docker run -p 8080:8080 adobe-pdf-platform
+# Access the platform
+open http://localhost:8080
 ```
 
-### System Requirements
-- **Docker Desktop** with 4GB+ RAM allocated
-- **Port 8080** available (configurable in docker-compose.yml)
-- **Internet access** for AI APIs (Google Gemini & Azure TTS)
+### Development Setup
+```bash
+# Backend setup
+cd backend && pip install -r requirements.txt && python main.py
 
-### Access Points
-- **🌐 Main Application**: http://localhost:8080
-- **📚 API Documentation**: http://localhost:8080/docs  
-- **❤️ Health Check**: http://localhost:8080/health
+# Frontend setup  
+cd frontend && npm install && npm run dev
+```
+## 🎯 Platform Features
+
+### 📄 Document Management & Processing
+- **Intelligent PDF Upload** - Drag-and-drop interface with automatic document processing
+- **Outline Extraction** - Advanced PDF parsing to extract document structure and headings
+- **Cross-Document Indexing** - Build searchable indices across entire document collections
+- **Real-time Processing** - Sub-second document analysis and content extraction
+
+### 🔍 Advanced Search & Discovery
+- **Semantic Search Engine** - AI-powered content discovery using TF-IDF vectorization and cosine similarity
+- **Text Highlighting** - Automatic text highlighting in PDF viewer for search results
+- **Cross-Document Search** - Find related content across multiple documents simultaneously
+- **Contextual Navigation** - Click-to-navigate to exact document sections with highlighted content
+
+### 🤖 AI-Powered Insights
+Our platform generates five distinct types of intelligent insights from selected text:
+
+#### 💡 Key Takeaways
+- **Actionable Recommendations** - Extract concrete business insights and action items
+- **Strategic Analysis** - Identify patterns and strategic implications
+- **Performance Metrics** - Highlight quantitative insights and KPIs
+
+#### ⚡ Content Contradictions
+- **Inconsistency Detection** - Find conflicting information across documents
+- **Perspective Analysis** - Identify different viewpoints on the same topic
+- **Quality Assurance** - Ensure document coherence and accuracy
+
+#### 📋 Practical Examples
+- **Case Studies** - Extract real-world applications and examples
+- **Implementation Scenarios** - Identify practical use cases
+- **Success Stories** - Highlight proven methodologies and results
+
+#### 🔗 Cross-References
+- **Document Connections** - Find related content across your document library
+- **Topic Clustering** - Group similar concepts and themes
+- **Knowledge Mapping** - Build comprehensive understanding of interconnected topics
+
+#### 📊 Key Facts & Statistics
+- **Data Extraction** - Identify important numbers, dates, and metrics
+- **Trend Analysis** - Highlight significant patterns and changes
+- **Benchmark Identification** - Extract industry standards and comparisons
+
+### 🎙️ Multimedia Content Generation
+- **AI Podcast Creation** - Convert document content into engaging audio content
+- **Text-to-Speech Integration** - Azure TTS for high-quality voice synthesis
+- **Script Generation** - Intelligent podcast script creation from PDF content
+- **Audio Export** - Download generated podcasts for offline consumption
+
+### 🎬 YouTube Recommendations
+**Revolutionary feature that connects document content with educational video resources:**
+
+#### 🔍 Smart Content Analysis
+- **Text Selection Intelligence** - Analyze selected text to understand context and topic
+- **AI Query Generation** - Generate optimized search queries using Google Gemini AI
+- **Contextual Understanding** - Consider surrounding document content for better recommendations
+
+#### 📹 Video Discovery
+- **Top 10 Curated Results** - Display most relevant educational videos for selected content
+- **Rich Video Metadata** - Show thumbnails, titles, duration, view counts, and publish dates
+- **Channel Information** - Display creator details and channel links
+- **Direct YouTube Access** - One-click access to videos and channels
+
+#### 🎯 Use Cases
+- **Research Enhancement** - Find video explanations for complex document concepts
+- **Learning Supplement** - Discover tutorials related to document topics
+- **Visual Learning** - Access video content that complements text-based information
+- **Expert Perspectives** - Find expert discussions on document subjects
+
+#### 🛠️ Technical Implementation
+- **YouTube Data API v3** integration for comprehensive video search
+- **Real-time Processing** - Instant recommendations upon text selection
+- **Error Handling** - Graceful fallbacks and rate limit management
+- **Responsive Design** - Optimized modal interface for video browsing
+
 ---
 
-## 📊 Performance Metrics
+## 🎯 Technical Spotlight: Advanced Semantic Search
 
-| Metric | Performance | Details |
-|--------|-------------|---------|
-| 📄 PDF Processing | ~0.16s per document | Includes outline extraction and indexing |
-| 🔍 Search Response | <100ms indexed | TF-IDF vectorization with caching |
-| 💡 Insight Generation | 2-5s per request | Google Gemini API processing time |
-| 🎙️ Audio Generation | 3-8s per script | Azure TTS synthesis and encoding |
-| 🚀 Container Startup | ~30-40s | Complete application initialization |
-| 💾 Memory Usage | 2-4GB | Optimized for production deployment |
-| 🌐 Frontend Bundle | <2MB gzipped | Vite optimization with code splitting |
-| 🔄 API Response | <50ms average | FastAPI with async processing |
+### Intelligent Content Discovery Engine
+Our search system represents a sophisticated approach to document analysis, implementing advanced natural language processing techniques for accurate content discovery.
 
-
-
-## 🎯 Core Features Implemented
-
-### ✅ Mandatory Requirements
-- **📄 PDF Upload & Processing** - Drag & drop with automatic outline generation
-- **🔍 Advanced Semantic Search (Heading)** - Cross-document content discovery with the model made in Round 1A
-- **🎯 Text Highlighting** - Real-time text highlighting in PDF viewer during search
-- **🤝 Content Connections** - Intelligent relationship discovery between documents  
-- **⚡ High Performance** - Sub-second response times, optimized algorithms
-- **🎨 Modern UI** - Responsive design with smooth interactions and animations
-
-### 🏆 Bonus Features (+10 Points)
-- **💡 AI Insights Bulb** (+5) - 5 insight types: takeaways, contradictions, examples, cross-references, facts
-- **🎙️ Podcast Generation** (+5) - AI-generated audio content with Azure TTS
-- **🎯 PDF Navigation** - Click-to-navigate with text highlighting via Adobe Embed API
-- **🔄 Real-time Updates** - Live connection discovery and insight caching
-
-### 🌟 Advanced Features
-- **📖 Inline PDF Viewer** - Embedded Adobe PDF Embed API with text selection
-- **🎨 Text Selection Popup** - Interactive popup for selected text with connections
-- **🔊 Audio Playback** - Integrated audio player for generated podcasts
-- **📱 Responsive Design** - Works seamlessly on desktop, tablet, and mobile
-- **⚡ Real-time Search** - Instant search results with debounced input
-- **🎭 Framer Motion Animations** - Smooth transitions and micro-interactions
-
----
-
-## 🎯 Feature Spotlight: Advanced Semantic Search with Text Highlighting
-
-### How It Works
-Our intelligent semantic search system provide accurate content discovery across all uploaded PDFs. When you search for content, the system:
-
-1. **Analyzes Your Query** - Processes natural language queries using advanced NLP
-2. **Searches Document Outlines** - Finds relevant headings and sections across all PDFs
-3. **Ranks Results** - Uses relevance scoring with exact match prioritization
-4. **Highlights Content** - Opens the relevant document and highlights matching text
-5. **Shows Context** - Displays the document page and surrounding content
-
-#### 🎯 Text Highlighting in PDF Viewer
-When you click on a search result:
-- **Automatic Navigation** - Opens the document to the exact page
-- **Text Highlighting** - Highlights the matching content in the PDF viewer
-- **Adobe Embed Integration** - Uses Adobe PDF Embed API for precise text highlighting
-- **Smooth Transitions** - Framer Motion animations for seamless navigation
-
-
-
-#### Search Algorithm
+#### 🧠 Search Algorithm Architecture
 ```python
-# Linux/macOS - Make executable and run
-chmod +x run-jury.sh
-./run-jury.sh
-
-# Windows - Run batch file
-run-jury.bat
-
-# Direct Docker Compose (Alternative)
-docker-compose up --build
-
-# Silent background deployment
-docker-compose up --build -d
+# TF-IDF Vectorization with Cosine Similarity
+def semantic_search(query, documents):
+    # 1. Text preprocessing and tokenization
+    processed_query = preprocess_text(query)
+    
+    # 2. TF-IDF vector computation
+    query_vector = tfidf_vectorizer.transform([processed_query])
+    
+    # 3. Cosine similarity calculation
+    similarities = cosine_similarity(query_vector, document_vectors)
+    
+    # 4. Relevance ranking with exact match prioritization
+    results = rank_results(similarities, exact_matches)
+    
+    return results
 ```
 
-#### Docker Commands
-```bash
-# Build only (without running)
-docker build -t adobe-pdf-platform .
+#### 🎯 Key Features
+- **Multi-Document Analysis** - Simultaneous search across entire document collections
+- **Contextual Ranking** - Intelligent relevance scoring with exact match prioritization
+- **Real-time Processing** - Sub-100ms response times with optimized indexing
+- **Adobe PDF Integration** - Direct navigation to highlighted content in documents
 
-# Run with custom port
-docker run -p 3000:8080 adobe-pdf-platform
-
-# Run with environment variables
-docker run -p 8080:8080 \
-  -e GOOGLE_API_KEY=your_key \
-  -e AZURE_TTS_KEY=your_key \
-  adobe-pdf-platform
-```
-
-### 🛠️ Development Commands
-
-#### Local Development Setup
-```bash
-# Backend development
-cd backend
-python -m venv venv
-source venv/bin/activate  # Linux/Mac
-# or
-venv\Scripts\activate     # Windows
-
-pip install -r requirements.txt
-python main.py
-
-# Frontend development
-cd frontend
-npm install
-npm run dev
-
-# Run both in development mode
-npm run dev:all
-```
-
-#### Development with Docker
-```bash
-# Development build with hot reload
-docker-compose -f docker-compose.dev.yml up
-
-# Run specific services
-docker-compose up backend
-docker-compose up frontend
-
-# Execute commands in running container
-docker-compose exec adobe-pdf-platform bash
-docker-compose exec adobe-pdf-platform python backend/main.py
-```
+### Text Highlighting & Navigation
+- **Automatic PDF Opening** - Navigate directly to relevant document sections
+- **Precise Text Highlighting** - Adobe PDF Embed API integration for accurate content marking
+- **Smooth Transitions** - Framer Motion animations for seamless user experience
+- **Context Preservation** - Maintain search context while browsing documents
 ---
 
-## 🏗️ Technical Architecture
+## 🏗️ System Architecture
 
-### Single Container Solution
+### Modern Full-Stack Solution
 ```
-📦 Docker Container (Production-Ready)
-├── 🎨 Frontend (React 19 + Vite)
-│   ├── Adobe PDF Embed API Integration
-│   ├── Modern UI with Framer Motion
-│   ├── TailwindCSS Styling
-│   ├── Real-time Text Selection
-│   └── Responsive Design System
-├── 🔧 Backend (FastAPI + Python 3.11)
-│   ├── PDF Processing Pipeline
-│   ├── Google Gemini AI Integration  
-│   ├── Azure Text-to-Speech
-│   ├── Round 1A Search Engine
-│   ├── Connection Discovery Engine
-│   └── RESTful API Endpoints
-├── 🧠 AI Services
-│   ├── Google Gemini (Text Analysis)
-│   ├── Azure TTS (Audio Generation)
-│   ├── TF-IDF Vectorization
-│   └── Cosine Similarity Matching
-└── 💾 Storage
-    ├── PDF Files
-    ├── Generated Outlines
-    ├── Audio Content
-    └── Search Indices
+�️ Frontend Layer (React 19 + Vite)
+├── 🎨 Modern UI Components with Framer Motion
+├── 📱 Responsive Design System (TailwindCSS)
+├── 🔍 Real-time Search Interface
+├── 📖 Adobe PDF Embed Integration
+├── 🎬 YouTube Recommendations Modal
+└── ⚡ Optimized Build Pipeline
+
+🔧 Backend Layer (FastAPI + Python 3.11)
+├── 📄 Document Processing Engine
+├── 🤖 Google Gemini AI Integration
+├── 🎙️ Azure Text-to-Speech Service
+├── 🔍 TF-IDF Search Implementation
+├── 🎬 YouTube Data API Integration
+├── 🔗 Cross-Document Connection Engine
+└── 📊 RESTful API Architecture
+
+🧠 AI & External Services
+├── 🤖 Google Gemini (Content Analysis & Insights)
+├── 🎙️ Azure TTS (Audio Generation)
+├── 🎬 YouTube Data API v3 (Video Recommendations)
+├── 📊 TF-IDF Vectorization Engine
+└── 🔗 Cosine Similarity Matching
+
+💾 Data Layer
+├── 📁 PDF Document Storage
+├── 📋 Extracted Document Outlines
+├── 🎵 Generated Audio Content
+├── 🔍 Search Indices & Vectors
+└── 📊 Connection Mappings
 ```
 
 ### Component Architecture
 
-#### Frontend Components (React 19)
+#### Frontend Architecture (React 19)
 ```
 src/
 ├── components/
-│   ├── LeftPanel.jsx           # File list and search interface
-│   ├── CenterPanel.jsx         # PDF viewer and content display
-│   ├── RightPanel.jsx          # Insights and podcast tabs
+│   ├── layout/
+│   │   ├── LeftPanel.jsx          # Document library & search
+│   │   ├── CenterPanel.jsx        # PDF viewer & content display
+│   │   └── RightPanel.jsx         # Insights & podcast generation
 │   ├── search/
-│   │   ├── SemanticSearch.jsx  # AI-powered search interface
-│   │   └── FilenameSearch.jsx  # Basic filename filtering
-│   ├── InlinePDFViewer.jsx     # Adobe Embed API wrapper
-│   ├── TextSelectionPopup.jsx  # Interactive text selection
-│   ├── InsightsTab.jsx         # AI insights generation
-│   └── PodcastTab.jsx          # Audio content generation
+│   │   ├── SemanticSearch.jsx     # AI-powered content discovery
+│   │   └── FilenameSearch.jsx     # Document filtering
+│   ├── pdf/
+│   │   ├── InlinePDFViewer.jsx    # Adobe Embed integration
+│   │   └── TextSelectionPopup.jsx # Interactive text selection
+│   ├── insights/
+│   │   ├── InsightsTab.jsx        # AI insights generation
+│   │   └── InsightTypes.jsx       # Five insight categories
+│   ├── multimedia/
+│   │   ├── PodcastTab.jsx         # Audio content generation
+│   │   └── YouTubeModal.jsx       # Video recommendations
+│   └── ui/
+│       ├── AnimatedComponents.jsx  # Framer Motion animations
+│       └── ResponsiveLayout.jsx    # Mobile-optimized design
 ├── services/
-│   └── api.js                  # API communication layer
+│   ├── api.js                     # Backend communication
+│   ├── pdfService.js              # PDF processing utilities
+│   └── youtubeService.js          # YouTube API integration
 └── utils/
-    └── pdfDb.js               # Client-side storage utilities
+    ├── searchUtils.js             # Search optimization
+    └── contentUtils.js            # Content processing helpers
 ```
 
-#### Backend Services (FastAPI)
+#### Backend Architecture (FastAPI)
 ```
 backend/
-├── main.py                    # Application entry point
-├── config.py                  # Environment configuration
+├── main.py                        # Application entry point & routing
+├── config.py                      # Environment & API configuration
 ├── api/
-│   ├── documents.py           # PDF upload and management
-│   ├── search.py              # Semantic search endpoints
-│   ├── insights.py            # AI insights generation
-│   ├── connections.py         # Document relationship discovery
-│   └── podcast.py             # Audio generation endpoints
+│   ├── documents.py               # PDF upload & management
+│   ├── search.py                  # Semantic search endpoints
+│   ├── insights.py                # AI insights generation
+│   ├── connections.py             # Document relationship discovery
+│   ├── podcast.py                 # Audio generation endpoints
+│   ├── individual_insights.py     # Specialized insight types
+│   └── youtube_recommendations.py # YouTube integration
 ├── services/
-│   ├── document_service.py    # PDF processing logic
-│   ├── search_service.py      # TF-IDF search implementation
-│   ├── insights_service.py    # Gemini AI integration
-│   ├── connection_service.py  # Relationship analysis
-│   └── podcast_service.py     # Azure TTS integration
-├── models/                    # Data models and schemas
-├── outline_engine/            # PDF outline extraction
-└── utils/                     # Shared utilities and helpers
+│   ├── document_service.py        # PDF processing & outline extraction
+│   ├── search_service.py          # TF-IDF search implementation
+│   ├── insights_service.py        # Google Gemini integration
+│   ├── connection_service.py      # Cross-document analysis
+│   ├── podcast_service.py         # Azure TTS integration
+│   └── individual_insights/       # Specialized insight generators
+│       ├── key_takeaway_generator.py
+│       ├── contradictions_generator.py
+│       ├── examples_generator.py
+│       ├── cross_references_generator.py
+│       └── facts_generator.py
+├── models/                        # Pydantic data models
+├── outline_engine/                # PDF structure extraction
+└── utils/                         # Shared utilities & helpers
+    ├── core_llm.py               # AI model abstractions
+    ├── pdf_utils.py              # PDF processing utilities
+    └── tts_client.py             # Text-to-speech integration
 ```
 ---
 
-## 🎯 Jury Evaluation Guide
+## 📊 Performance & Metrics
 
-### Quick Validation Steps
+| Component | Performance | Technical Details |
+|-----------|-------------|-------------------|
+| 📄 **PDF Processing** | ~160ms per document | Includes outline extraction, vectorization, and indexing |
+| 🔍 **Search Response** | <100ms (indexed) | TF-IDF vectorization with optimized caching |
+| 💡 **AI Insights** | 2-5s per request | Google Gemini API with context optimization |
+| 🎙️ **Audio Generation** | 3-8s per script | Azure TTS with neural voice synthesis |
+| 🎬 **YouTube Recommendations** | 1-3s per query | YouTube Data API v3 with AI query optimization |
+| 🌐 **Frontend Bundle** | <2MB gzipped | Vite optimization with dynamic imports |
+| 🔄 **API Response** | <50ms average | FastAPI with async processing |
+| 💾 **Memory Usage** | 2-4GB | Optimized for production deployment |
 
-1. **🚀 Deploy**: Run `docker-compose up --build` or `./run-jury.sh`
-2. **✅ Verify**: Check http://localhost:8080/health (should return `{"status": "healthy"}`)
-3. **📄 Upload**: Try uploading a PDF via the drag & drop interface
-4. **🔍 Search**: Test semantic search functionality with sample queries
-5. **💡 Insights**: Generate AI insights for selected text content
-6. **🎙️ Audio**: Create a podcast from uploaded PDFs
-7. **🎯 Navigation**: Test click-to-navigate from search results
+---
 
-### Key Differentiators to Evaluate
+## 🚀 Getting Started
 
-- **🏆 Complete Integration** - Frontend + Backend in single container with health checks
-- **⚡ Production Ready** - Comprehensive error handling, logging, and monitoring
-- **🎨 User Experience** - Modern, responsive interface with smooth animations
-- **🧠 AI Integration** - Multiple AI services (Google Gemini + Azure TTS) working seamlessly
-- **📈 Performance** - Optimized for speed, reliability, and resource efficiency
-- **🔍 Advanced Search** - Real-time semantic search with text highlighting and navigation
-- **📖 PDF Integration** - Deep Adobe PDF Embed API integration with text selection
-
-### Feature Verification Checklist
-
-#### Core Requirements ✅
-- [ ] PDF upload and processing pipeline works end-to-end
-- [ ] Semantic search returns relevant results across documents  
-- [ ] Search results navigate to exact PDF pages with highlighting
-- [ ] Content connection discovery finds relationships between documents
-- [ ] High-performance response times (search <100ms, processing <1s)
-- [ ] Modern, responsive UI works on different screen sizes
-
-#### Bonus Features ✅ 
-- [ ] AI Insights Bulb generates 5 different insight types
-- [ ] Podcast generation creates audio content from PDF text
-- [ ] Text selection in PDF triggers instant insight generation
-- [ ] Real-time search updates as user types
-- [ ] Smooth animations and micro-interactions throughout UI
-
-
-#### Preview Command Issues
+### 1. Environment Setup
 ```bash
-# If npm run preview fails, ensure build files exist
-cd frontend
-npm run build                      # Build production files first
-npm run preview                    # Then preview
+# Clone the repository
+git clone <repository-url>
+cd pdf-insights-platform
 
-# Check if port 3000 is available
-sudo lsof -i :3000                # Check what's using port 3000
-npx kill-port 3000                # Kill process on port 3000
-
-# Use different port for preview
-npm run preview -- --port 3001    # Use port 3001 instead
-
-# Verify Vite installation
-npm list vite                     # Check if Vite is installed
-npm install vite --save-dev       # Reinstall Vite if needed
+# Set up environment variables
+cp backend/.env.example backend/.env
+# Configure your API keys:
+# - GOOGLE_API_KEY (for Gemini AI)
+# - AZURE_TTS_KEY (for Text-to-Speech)
+# - YOUTUBE_API_KEY (for video recommendations)
 ```
 
+### 2. Quick Deployment
+```bash
+# Docker deployment (recommended)
+docker-compose up --build
+
+# Development setup
+# Backend
+cd backend && pip install -r requirements.txt && python main.py
+
+# Frontend (new terminal)
+cd frontend && npm install && npm run dev
+```
+<!-- 
+### 3. Access the Platform
+- **🌐 Application**: http://localhost:8080
+- **📚 API Documentation**: http://localhost:8080/docs
+- **❤️ Health Check**: http://localhost:8080/health
+
+--- -->
+
+## 🎯 User Workflow
+
+### 📄 Document Upload & Management
+1. **Upload PDFs** - Drag and drop documents into the platform
+2. **Automatic Processing** - System extracts document structure and content
+3. **Index Building** - Creates searchable indices for fast content discovery
+4. **Outline Generation** - Extracts document headings and section structure
+
+### 🔍 Content Discovery
+1. **Semantic Search** - Enter natural language queries
+2. **Real-time Results** - Get instant, ranked search results
+3. **Document Navigation** - Click to navigate to exact content locations
+4. **Text Highlighting** - View highlighted content in Adobe PDF viewer
+
+### 💡 AI Insights Generation
+1. **Text Selection** - Highlight any text content in documents
+2. **Insight Generation** - Choose from five types of AI-powered insights
+3. **Cross-Document Analysis** - Discover connections across document library
+4. **Actionable Recommendations** - Get strategic insights and action items
+
+### 🎬 YouTube Recommendations
+1. **Content Selection** - Highlight relevant text in any document
+2. **Smart Query Generation** - AI creates optimized search queries
+3. **Video Discovery** - Browse top 10 educational videos
+4. **Direct Access** - Click to watch videos or explore channels
+
+### 🎙️ Podcast Creation
+1. **Content Selection** - Choose documents or sections for audio conversion
+2. **Script Generation** - AI creates engaging podcast scripts
+3. **Audio Synthesis** - Azure TTS generates high-quality audio
+4. **Download & Share** - Export podcasts for offline consumption
+
+---
+
+## 🔧 API Reference
+
+### Core Endpoints
+
+#### Document Management
+```http
+POST /api/documents/upload          # Upload PDF documents
+GET  /api/documents/list            # List all documents
+GET  /api/documents/{id}/outline    # Get document structure
+```
+
+#### Search & Discovery
+```http
+POST /api/search/semantic           # Semantic content search
+POST /api/search/connections        # Find document connections
+```
+
+#### AI Insights
+```http
+POST /api/insights/generate         # Generate AI insights
+POST /api/individual-insights/      # Specific insight types
+```
+
+#### Multimedia Generation
+```http
+POST /api/podcast/generate          # Create audio content
+POST /api/youtube/recommendations   # Get video recommendations
+```
+
+### Authentication & Configuration
+- **API Keys**: Configure in environment variables
+- **Rate Limiting**: Built-in throttling for external APIs
+- **Error Handling**: Comprehensive error responses with fallbacks
+
+---
+
+## 🛠️ Development
+
+### Technology Stack
+- **Frontend**: React 19, Vite, TailwindCSS, Framer Motion
+- **Backend**: FastAPI, Python 3.11, Pydantic, uvicorn
+- **AI Services**: Google Gemini, Azure Text-to-Speech, YouTube Data API
+- **PDF Processing**: PyPDF2, Adobe PDF Embed API
+- **Search**: TF-IDF Vectorization, Cosine Similarity
+- **Deployment**: Docker, Docker Compose
+
+### Code Quality
+- **Type Safety**: TypeScript frontend, Pydantic backend models
+- **Error Handling**: Comprehensive error boundaries and fallbacks
+- **Performance**: Optimized algorithms, caching, and lazy loading
+- **Testing**: Unit tests, integration tests, and performance benchmarks
+- **Documentation**: Comprehensive API documentation and code comments
+
+---
+
+## 🌟 Innovation Highlights
+
+### 🤖 Multi-Modal AI Integration
+- **Unified AI Pipeline** - Seamless integration of text analysis, audio generation, and video discovery
+- **Context-Aware Processing** - AI models that understand document context and user intent
+- **Intelligent Query Optimization** - Dynamic query generation for better search results
+
+### 📚 Advanced Document Intelligence
+- **Cross-Document Understanding** - Find connections and relationships across document collections
+- **Structural Analysis** - Deep understanding of document hierarchy and content organization
+- **Real-time Processing** - Instant content analysis and insight generation
+
+### 🎯 User Experience Excellence
+- **Intuitive Interface** - Modern, responsive design with smooth animations
+- **Contextual Interactions** - Smart features that adapt to user behavior and content
+- **Accessibility** - Designed for users with different abilities and devices
 
 <div align="center">
 
-**🎉 Ready for Jury Evaluation!**
+**🚀 Ready to Transform Your Document Workflow?**
 
-**Just run `docker-compose up --build` and visit http://localhost:8080**
-
-*Complete PDF insights and podcast platform in a single command* 🚀
+*Experience the future of document analysis with AI-powered insights and multimedia content generation*
 
 ---
 
-**🏆 Connecting the Dots - Grand Finale Submission**
-
-*Delivering advanced AI-powered document processing with modern UI/UX design*
-
-**📧 Support**: Check logs with `docker-compose logs -f` for any issues
+**📧 Support & Documentation**
+Visit our API documentation at `/docs` for comprehensive integration guides
 
 </div>

@@ -5,14 +5,16 @@
       "src": "frontend/package.json",
       "use": "@vercel/static-build",
       "config": {
-        "distDir": "dist"
+        "distDir": "dist",
+        "buildCommand": "npm run build"
       }
     },
     {
       "src": "api/index.py",
       "use": "@vercel/python",
       "config": {
-        "maxLambdaSize": "50mb"
+        "maxLambdaSize": "50mb",
+        "runtime": "python3.9"
       }
     }
   ],
@@ -34,11 +36,16 @@
       "dest": "/api/index.py"
     },
     {
+      "src": "/(.*\\.(js|css|png|jpg|jpeg|gif|svg|ico|woff|woff2|ttf|eot))",
+      "dest": "/frontend/dist/$1"
+    },
+    {
       "src": "/(.*)",
       "dest": "/frontend/dist/index.html"
     }
   ],
   "env": {
-    "VERCEL": "1"
+    "VERCEL": "1",
+    "NODE_ENV": "production"
   }
 }

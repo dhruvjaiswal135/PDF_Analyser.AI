@@ -5,8 +5,7 @@
       "src": "frontend/package.json",
       "use": "@vercel/static-build",
       "config": {
-        "distDir": "dist",
-        "buildCommand": "npm run build"
+        "distDir": "dist"
       }
     },
     {
@@ -36,16 +35,24 @@
       "dest": "/api/index.py"
     },
     {
-      "src": "/(.*\\.(js|css|png|jpg|jpeg|gif|svg|ico|woff|woff2|ttf|eot))",
+      "src": "/assets/(.*)",
+      "dest": "/frontend/dist/assets/$1"
+    },
+    {
+      "src": "/(favicon\\.ico|logo192\\.png|logo512\\.png|manifest\\.json|robots\\.txt)",
+      "dest": "/frontend/dist/$1"
+    },
+    {
+      "src": "/sample/(.*)",
+      "dest": "/frontend/dist/sample/$1"
+    },
+    {
+      "src": "/(.*\\.(js|css|png|jpg|jpeg|gif|svg|ico|woff|woff2|ttf|eot|json))",
       "dest": "/frontend/dist/$1"
     },
     {
       "src": "/(.*)",
       "dest": "/frontend/dist/index.html"
     }
-  ],
-  "env": {
-    "VERCEL": "1",
-    "NODE_ENV": "production"
-  }
+  ]
 }

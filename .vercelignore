@@ -1,0 +1,48 @@
+# Ignore development files
+.git
+.gitignore
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+.venv
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore build artifacts
+node_modules
+.next
+.nuxt
+dist
+build
+
+# Ignore logs
+*.log
+logs
+
+# Ignore OS files
+.DS_Store
+Thumbs.db
+
+# Ignore development scripts
+run-jury.sh
+run-jury.bat
+setup-check.sh
+
+# Ignore Docker files (not needed for Vercel)
+Dockerfile
+docker-compose.yml
+
+# Ignore test files
+test_podcast_*.wav
+
+# Ignore storage files (will be created at runtime)
+storage/
+
+# Ignore README files for deployment
+README-YOUTUBE.md
+YOUTUBE_FEATURE.md
+VERCEL_DEPLOYMENT.md
